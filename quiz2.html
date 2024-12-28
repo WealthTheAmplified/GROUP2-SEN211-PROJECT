@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz UI</title>
+  
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: #222;
+    }
+    header .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: orange;
+    }
+    header input[type="search"] {
+      width: 300px;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #555;
+    }
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      font-size: 24px;
+      color: orange;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .question p {
+      font-size: 16px;
+      margin: 5px 0;
+    }
+    .options label {
+      display: block;
+      margin-bottom: 5px;
+      cursor: pointer;
+    }
+    .options input[type="radio"] {
+      margin-right: 10px;
+    }
+    .submit-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #000;
+      color: orange;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      border: solid orange;
+      border-width: 1px;
+      cursor: pointer;
+    }
+    .submit-btn:hover {
+      background-color: darkorange;
+    }
+    .timer, .question-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .question-nav .nav-buttons span {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      margin: 0 5px;
+      background-color: green;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 25px;
+      font-size: 14px;
+      color: white;
+      cursor: pointer;
+    }
+    .question-nav .nav-buttons span.skipped {
+      background-color: cyan;
+    }
+  </style>
+</head>
+<body>
+  
+  <main>
+    <h1>Quiz on: COS121</h1>
+    <div class="timer">
+      <span>Time: <strong>10 mins : 20 secs</strong></span>
+      <div class="question-nav">
+        <div class="nav-buttons">
+          <span class="answered">1</span>
+          <span class="answered">2</span>
+          <span class="answered">3</span>
+          <span class="answered">4</span>
+          <span class="answered">5</span>
+          <span class="answered">6</span>
+          <span class="answered">7</span>
+          <span class="answered">8</span>
+          <span class="answered">9</span>
+          <span class="answered">10</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>Question 1: What is the primary goal of algorithm?</p>
+      <div class="options">
+        <label><input type="radio" name="q1"> To Write Efficient Code</label>
+        <label><input type="radio" name="q1" checked> To Solve Complex Problems</label>
+        <label><input type="radio" name="q1"> To Design a User Interface</label>
+        <label><input type="radio" name="q1"> To Optimize Memory Usage</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>Question 2: What is a flowchart used for in Programming?</p>
+      <div class="options">
+        <label><input type="radio" name="q2"> To write codes</label>
+        <label><input type="radio" name="q2"> To design Algorithm</label>
+        <label><input type="radio" name="q2"> To debug Programs</label>
+        <label><input type="radio" name="q2"> To test Software</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>Question 3: What is the purpose of keywords in Programming?</p>
+      <div class="options">
+        <label><input type="radio" name="q3"> To declare variables</label>
+        <label><input type="radio" name="q3"> To define Functions</label>
+        <label><input type="radio" name="q3"> To Control Program</label>
+        <label><input type="radio" name="q3"> To Identify Reserved Words</label>
+      </div>
+    </div>
+
+    <button class="submit-btn">Submit Quiz &gt;</button>
+  </main>
+</body>
+</html>
