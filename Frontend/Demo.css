@@ -261,6 +261,11 @@ height: 7rem;
     font-weight: bold;
     font-size: medium;
     border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+    float: right;
 }
 
 .quizButton:hover {
