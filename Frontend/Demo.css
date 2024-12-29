@@ -27,7 +27,7 @@ body {
     src: url(./Fonts/Montserrat-Light.ttf);
 }
 
-#Learn {
+.Learn {
     background-color: orange;
     color: black;
     font-family: Monteserrat-Black;
@@ -35,6 +35,15 @@ body {
 
 header h1 {
     font-family: Monteserrat-Black;
+    font-size: 20px;
+}
+
+.module-btn span{
+    background-color: orange;
+    color: black;
+    border: none;
+    padding: 0 5px;
+    font-weight: bold;
 }
 
 nav ul {
@@ -63,7 +72,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    ;
+    font-size: 17px;
 }
 
 header .hamburger>div {
@@ -489,17 +498,20 @@ header.search-container {
     margin-right: 170px;
 }
 
-.profile {
+/* .profile {
     padding-right: 5px;
     padding-left: 5px;
     background-color: #FF2D55;
-    border-radius: 49px;
+    border-radius: 50px;
     color: Pink;
-    width: 35px;
-}
+    width: 50px;
+    height: 50px;
+    display: flex;
+} */
 
 .profile-text {
     font-family: Afacad;
+    display: flex;
 }
 
 .course-student {
@@ -534,4 +546,23 @@ header.search-container {
     color: black;
     font-weight: bold;
     cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* background-color: #222; */
+  }
+
+.profile {
+    width: 35px;
+    height: 35px;
+    background-color: #dd3b3b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
 }
