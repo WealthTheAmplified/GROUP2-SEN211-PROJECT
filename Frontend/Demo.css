@@ -358,6 +358,13 @@ section.content ol ul li {
     color: orange;
 }
 
+.content{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+}
+
 /* section.question-area {
     display: flex;
     justify-content: space-between;
@@ -456,6 +463,19 @@ section.question-area .answered-questions div {
     justify-content: space-between;
     align-items: center;
     margin-top: 1em;
+}
+
+.go-back a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.go-back a:hover {
+    /* padding: .5em .8em; */
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .go-back:hover {
