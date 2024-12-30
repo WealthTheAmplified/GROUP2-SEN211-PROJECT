@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Module 2</title>
-    <link rel="stylesheet" href="/GROUP2-SEN211-PROJECT/Frontend/Demo.css">
+    <link rel="stylesheet" href="/GROUP2-SEN211-PROJECT/Frontend/Cos121.css">
 </head>
 
 <body>
@@ -55,51 +55,106 @@
 
             <div class="lecture-heading">
                 <h1>COS121</h1>
-                <h1>Keywords, Variables and Assignment statements</h1>
+                <h1>Introduction To Array</h1>
             </div>
 
                 <div class="lecture-note">
                     <div class="lecture-module-intro">
-                        <P>Keywords are reserved words in a programming lauguage that have special meanings. <br>They cannot be used as variable names. Examples of keywords include if, else, while,<br> for, int, and double. Keywords are used to define the structure and syntax of a program. <br>Variable are names given to memory locations to store data. A variable has a data type, <br>which determines the type of data that can be stored in it. Variables can be assigned a <br>new value. There are several type of variables, including integer variables, floating-point <br>variables, and character variables.
+                        <P>An array is a collection of elements of the same data type stored in contiguous memory locations. Arrays are used to store and manipulate large amounts of data.</P>
                     </div><br>
 
                     <div>
                             <div class="inner-heading">
-                                <h2>Types of Variables:</h2>
+                                <h2>Characteristics of Arrays:</h2>
                             </div>
 
                                 <div class="type-list">
                                     <ul> 
-                                        <li>Integer variables are used to store whole numbers. They are declared using the int keyword. <br>Example: int x = 5;</li> 
+                                        <li>All elements in an array are of the same data type.</li> 
 
-                                        <li>Floating-point variables are used to store decimal numbers. They are declared using the <br>double keyword. Example double y = 3.14</li>
+                                        <li>Each element in an array is identified by an index or subscript.</li>
 
-                                        <li>Character variables are used to store single characters. They are declared using the character <br>keyword. Example: character z = &#39;A&#39;;</li> 
+                                        <li>Arrays are stored in contiguous memory locations.</li> 
+
+                                        <li>Arrays have a fixed size that is specified when the array is created.</li>
                                     </ul>
                                 </div><br>
 
                             <div class="inner-heading">
-                                <h2>Assignment Statement</h2>
-                            </div> 
-
-                                <div>
-                                    <p>Assignment statements are used to assign a value to a variable. The syntax for an assignment <br>statement is a variable_name = value;. For example: x = 5; assigns the value 5 to the variable x.</p>
-                                </div><br>
-
-                            <div class="inner-heading">
-                                 <h2>Rules of Naming Variables:</h2>
+                                 <h2>Types of Arrays:</h2>
                             </div>
                                 <div class="type-list">
                                     <ol>
-                                        <li><p>Variable names must start with a letter or underscore. They can contain letters, digits and underscore.</li>
+                                        <li>One-dimensional array: A list of elements of the same data type.</li>
 
-                                        <li>Variable names cannot contain special characters or keywords.</li>
-
-                                        <li>Variable names must be unique within the program.</li>
+                                        <li>Multi-dimensional array: A table or matrix of elements of the same data type.</li>
                                     </ol>
-                                        <p>Examples of valid variable names include x, y, z, and total marks. Examples of invalid variable names include 123, if total-marks.</p>
-                                         
                                 </div>
+
+                                <div class="inner-heading">
+                                    <h2>Declaring Arrays</h2>
+                                </div>
+    
+                                    <div class="type-list">
+                                        <ul> 
+                                            <li>The syntax for declaring a one-dimensional array is: data_type array_name[array_size];</li> 
+    
+                                            <li>The syntax for declaring a multi-dimensional array is: data_type
+                                                array_name[array_size1][array_size2];.</li>
+                                        </ul>
+                                    </div><br>
+
+                                <div class="inner-heading">
+                                    <h2>Initializing Arrays</h2>
+                                </div>
+    
+                                    <div class="type-list">
+                                        <ul> 
+                                            <li>Arrays can be initialized when they are declared using the syntax: data_type array_name[array_size] = {element1, element2, ...};</li> 
+    
+                                            <li>Arrays can also be initialized using a loop.</li>
+                                        </ul>
+                                    </div><br>
+
+                                <div class="inner-heading">
+                                    <h2>Initializing Arrays</h2>
+                                </div>
+        
+                                   <div class="type-list">
+                                        <ul> 
+                                            <li>Array elements can be accessed using their index or subscript.</li> 
+    
+                                            <li>The syntax for accessing an array element is: array_name[index].</li>
+                                        </ul>
+                                    </div><br>
+
+                                <div class="inner-heading">
+                                    <h3>Exaples:</h3>
+                                </div>
+            
+                                    <div class="example">
+                                        <p>Example of a One-Dimensional Array:</p>
+                                        <p>int scores[5] = {90, 80, 70, 60, 50};</p>
+                                        <p>printf(&quot;%d&quot;, scores[0]); // prints 90</p><br>
+
+                                        <p>Example of a Multi-Dimensional Array:</p>
+                                        <p>int matrix[2][3] = {{1, 2, 3}, {4, 5, 6}};</p>
+                                        <p>printf(&quot;%d&quot;, matrix[0][1]); // prints 2</p>
+                                        <p>printf(&quot;%d&quot;, matrix[1][2]); // prints 6</p><br>
+
+                                        <p>Example of Accessing Array Elements:</p>
+                                        <p>int numbers[3] = {10, 20, 30};</p>
+                                        <p>printf(&quot;%d&quot;, numbers[1]); // prints 20</p>
+                                        <p>printf(&quot;%d&quot;, numbers[2]); // prints 30</p>
+                                        <p>printf(&quot;%d&quot;, numbers[0]); // prints 10</p><br>
+                                        
+                                        <p>Example of Initializing Arrays Using a Loop:</p>
+                                        <p>int numbers[5];</p>
+                                        <p>for (int i = 0; i &lt; 5; i++) {</p>
+                                            <p>numbers[i] = i * 10;</p>
+                                        <p>}</p>    
+                                        
+                                    </div><br>
                     </div>
 
                 </div>
@@ -107,4 +162,4 @@
         </main>
     </section>
 </body>
-    
+</html>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Module 2</title>
-    <link rel="stylesheet" href="/GROUP2-SEN211-PROJECT/Frontend/Demo.css">
+    <link rel="stylesheet" href="/GROUP2-SEN211-PROJECT/Frontend/Cos121.css">
 </head>
 
 <body>
@@ -55,51 +55,115 @@
 
             <div class="lecture-heading">
                 <h1>COS121</h1>
-                <h1>Keywords, Variables and Assignment statements</h1>
+                <h1>Computer Programming Langu</h1>
             </div>
 
                 <div class="lecture-note">
                     <div class="lecture-module-intro">
-                        <P>Keywords are reserved words in a programming lauguage that have special meanings. <br>They cannot be used as variable names. Examples of keywords include if, else, while,<br> for, int, and double. Keywords are used to define the structure and syntax of a program. <br>Variable are names given to memory locations to store data. A variable has a data type, <br>which determines the type of data that can be stored in it. Variables can be assigned a <br>new value. There are several type of variables, including integer variables, floating-point <br>variables, and character variables.
+                        <P>A computer programming language is a set of instructions and rules used to write software, apps, and websites. Programming languages are used to communicate with computers and create a wide range of digital products.</P>
                     </div><br>
 
                     <div>
                             <div class="inner-heading">
-                                <h2>Types of Variables:</h2>
+                                <h2>Types of Programming Languages</h2>
                             </div>
 
                                 <div class="type-list">
                                     <ul> 
-                                        <li>Integer variables are used to store whole numbers. They are declared using the int keyword. <br>Example: int x = 5;</li> 
+                                        <li>Low-Level Languages: close to machine language, used for operating systems and embedded systems, e.g., Assembly Language</li> 
 
-                                        <li>Floating-point variables are used to store decimal numbers. They are declared using the <br>double keyword. Example double y = 3.14</li>
+                                        <li>High-Level Languages: farther from machine language, used for applications and web development, e.g., C++, Java, Python</li>
 
-                                        <li>Character variables are used to store single characters. They are declared using the character <br>keyword. Example: character z = &#39;A&#39;;</li> 
-                                    </ul>
+                                        <li>Scripting Languages: used for rapid development and execution, e.g., JavaScript, PHP, Ruby</li> 
+
+                                        <li>Markup Languages: used for structuring and formatting data, e.g., HTML, XML </li>
+                                    </ul><br>
                                 </div><br>
 
                             <div class="inner-heading">
-                                <h2>Assignment Statement</h2>
+                                <h2>Characteristics of Programming Language</h2>
                             </div> 
 
-                                <div>
-                                    <p>Assignment statements are used to assign a value to a variable. The syntax for an assignment <br>statement is a variable_name = value;. For example: x = 5; assigns the value 5 to the variable x.</p>
-                                </div><br>
-
-                            <div class="inner-heading">
-                                 <h2>Rules of Naming Variables:</h2>
-                            </div>
                                 <div class="type-list">
                                     <ol>
-                                        <li><p>Variable names must start with a letter or underscore. They can contain letters, digits and underscore.</li>
-
-                                        <li>Variable names cannot contain special characters or keywords.</li>
-
-                                        <li>Variable names must be unique within the program.</li>
-                                    </ol>
-                                        <p>Examples of valid variable names include x, y, z, and total marks. Examples of invalid variable names include 123, if total-marks.</p>
-                                         
+                                        <li>Syntax: rules governing the structure of code</li>
+                                        <li>Semantics: meaning of code and how it is executed</li>
+                                        <li>Keywords: reserved words with special meaning in a language</li>
+                                        <li>Data Types: types of data that can be used in a program.</li>
+                                        <li>Variables: named storage locations for data</li>
+                                        <li>Operators: symbols used to perform operations on data</li>
+                                        <li>Control Structures: statements that control the flow of a program</li>
+                                    </ol><br>
                                 </div>
+
+                                <div class="inner-heading">
+                                    <h2>Popular Programming Languages</h2>
+                                </div> 
+    
+                                    <div>
+
+                                        <p>C++: high-performance language for operating systems, games, and applications</p>
+                                        <p>Java: object-oriented language for Android apps, web development, and enterprise software</p>
+                                        <p>Python: versatile language for data science, machine learning, web development, and automation</p>  
+                                        <p>JavaScript: scripting language for web development, game development, and mobile app development</p>
+                                        <p>PHP: server-side language for web development and dynamic content</p>
+                                        <p>Ruby: object-oriented language for web development and automation</p>
+                                        <p>Swift: language for iOS and macOS apps</p>
+                                        <p>Kotlin: language for Android app development</p>
+                                        <p>SQL: language for managing and querying databases</p>
+                                        <p>HTML/CSS: markup and styling languages for web development</p>
+                                        <p>Assembly Language: low-level language for hardware programming</p>
+                                        <p>Go: language for cloud computing and system programming</p>
+                                    </div>  
+                                    
+                                <div class="inner-heading">
+                                    <h4>Exaples:</h4>
+                                </div>
+                                    <div class="example">
+                                        <p>Example of a Python program:</p>
+                                        <p>def factorial(n):
+                                            # Base case: if n is 0 or 1, return 1
+                                            if n == 0 or n == 1:
+                                                return 1
+                                            # Recursive case: n * factorial of (n-1)
+                                            else:
+                                                return n * factorial(n - 1)
+                                            
+                                            # Input: change the value of 'num' to calculate the factorial of a different number
+                                            num = 5
+                                            result = factorial(num)
+                                            print(f"The factorial of {num} is {result}")</p><br>
+
+                                            <p>Example of a PHP program:</p>
+                                            <p><?php
+                                                $servername = "localhost";
+                                                $username = "username";
+                                                $password = "password";
+                                                $dbname = "database_name";
+                                                
+                                                // Create connection
+                                                $conn = new mysqli($servername, $username, $password, $dbname);
+                                                
+                                                // Check connection
+                                                if ($conn->connect_error) {
+                                                    die("Connection failed: " . $conn->connect_error);
+                                                }
+                                                
+                                                $sql = "SELECT id, name, email FROM users";
+                                                $result = $conn->query($sql);
+                                                
+                                                if ($result->num_rows > 0) {
+                                                    // Output data of each row
+                                                    while($row = $result->fetch_assoc()) {
+                                                        echo "id: " . $row["id"]. " - Name: " . $row["name"]. " - Email: " . $row["email"]. "<br>";
+                                                    }
+                                                } else {
+                                                    echo "0 results";
+                                                }
+                                                $conn->close();
+                                                ?>
+                                                </p>
+                                       </div>
                     </div>
 
                 </div>
@@ -107,4 +171,5 @@
         </main>
     </section>
 </body>
-    
+</html>
+

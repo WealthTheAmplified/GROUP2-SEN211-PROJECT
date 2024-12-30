@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Module 2</title>
-    <link rel="stylesheet" href="/GROUP2-SEN211-PROJECT/Frontend/Demo.css">
+    <link rel="stylesheet" href="/GROUP2-SEN211-PROJECT/Frontend/Cos121.css">
 </head>
 
 <body>
@@ -55,51 +55,77 @@
 
             <div class="lecture-heading">
                 <h1>COS121</h1>
-                <h1>Keywords, Variables and Assignment statements</h1>
+                <h1>Control Structures</h1>
             </div>
 
                 <div class="lecture-note">
                     <div class="lecture-module-intro">
-                        <P>Keywords are reserved words in a programming lauguage that have special meanings. <br>They cannot be used as variable names. Examples of keywords include if, else, while,<br> for, int, and double. Keywords are used to define the structure and syntax of a program. <br>Variable are names given to memory locations to store data. A variable has a data type, <br>which determines the type of data that can be stored in it. Variables can be assigned a <br>new value. There are several type of variables, including integer variables, floating-point <br>variables, and character variables.
+                        <P>Control structures are used to control the flow of a program&#39;s execution. They determine which statements are executed, how many times they are executed, and in what order they are  executed.</P>
+                            
                     </div><br>
 
                     <div>
                             <div class="inner-heading">
-                                <h2>Types of Variables:</h2>
+                                <h2>Types of Control Structures:</h2>
                             </div>
 
                                 <div class="type-list">
-                                    <ul> 
-                                        <li>Integer variables are used to store whole numbers. They are declared using the int keyword. <br>Example: int x = 5;</li> 
+                                    <dl>
+                                        <dt>Sequential Control Structures:</dt>
+                                            <dd>This is the simplest control structure, where statements are executed one after the other.</dd>
 
-                                        <li>Floating-point variables are used to store decimal numbers. They are declared using the <br>double keyword. Example double y = 3.14</li>
+                                        <dt>Conditional Control Structure:</dt>
+                                            <dd>This control structure allows a program to make decisions based on certain conditions. It includes if-else statements and switch statements.</li>
 
-                                        <li>Character variables are used to store single characters. They are declared using the character <br>keyword. Example: character z = &#39;A&#39;;</li> 
+                                        <dt>Repetitive Control Structure:</dt>
+                                            <dd>This control structure allows a program to repeat a set of statements. It includes for loops, while loops, and do-while loops.</li>
+                                    </dl>
+                                </div><br>
+
+                            <div class="inner-heading">
+                                <h3>Conditional Control Structure</h3>
+                            </div> 
+
+                                <div class="type-list">
+                                    <ul>
+                                        <li>If-else statement: Used to execute a block of code if a condition is true, and another block of</li>
+
+                                        <li>If-else statement: Used to execute a block of code if a condition is true, and another block of code if the condition is false.</li>
+
+                                        <li>Switch statement: Used to execute a block of code based on the value of a variable.</li>
                                     </ul>
                                 </div><br>
 
                             <div class="inner-heading">
-                                <h2>Assignment Statement</h2>
-                            </div> 
-
-                                <div>
-                                    <p>Assignment statements are used to assign a value to a variable. The syntax for an assignment <br>statement is a variable_name = value;. For example: x = 5; assigns the value 5 to the variable x.</p>
-                                </div><br>
-
-                            <div class="inner-heading">
-                                 <h2>Rules of Naming Variables:</h2>
+                                 <h3>Repetitive Control Structure</h3>
                             </div>
                                 <div class="type-list">
                                     <ol>
-                                        <li><p>Variable names must start with a letter or underscore. They can contain letters, digits and underscore.</li>
+                                        <li>For loop: Used to repeat a block of code for a specified number of times.</li>
 
-                                        <li>Variable names cannot contain special characters or keywords.</li>
+                                        <li>While loop: Used to repeat a block of code while a condition is true.</li>
 
-                                        <li>Variable names must be unique within the program.</li>
-                                    </ol>
-                                        <p>Examples of valid variable names include x, y, z, and total marks. Examples of invalid variable names include 123, if total-marks.</p>
-                                         
-                                </div>
+                                        <li>Do-while loop: Used to repeat a block of code while a condition is true, but the code is executed at least once.</li>
+                                    </ol>                             
+                                </div><br>
+
+                                <div class="inner-heading">
+                                    <h4>Exaples:</h4>
+                               </div>
+                                   <div class="example">
+                                        <p>Example of a Conditional Control Structure:</p>
+                                        <p>if (x &gt; 5) {</p>
+                                        <p>printf(&quot;x is greater than 5&quot;);</p>
+                                        <p>} else {</p>
+                                        <p>printf(&quot;x is less than or equal to 5&quot;);</p>
+                                        <p>}</p><br>
+
+                                        <p>Example of a Repetitive Control Structure:</p>
+                                        <p>for (int i = 0; i &lt; 10; i++) {</p>
+                                        <p>printf(&quot;%d\n&quot;, i);</p>
+                                        <p>}</p>
+                                   </div>
+
                     </div>
 
                 </div>
@@ -107,4 +133,4 @@
         </main>
     </section>
 </body>
-    
+</html>
