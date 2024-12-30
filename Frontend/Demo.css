@@ -285,7 +285,7 @@ height: 7rem;
     cursor: pointer;
 }
 
-section.content {
+/* section.content {
     margin-top: 3em;
 }
 
@@ -321,7 +321,7 @@ section.content ol ul li {
     justify-content: space-between;
     margin-top: 3em;
 }
-
+ */
 .pagination .prev {
     width: 30%;
     text-align: right;
@@ -358,7 +358,7 @@ section.content ol ul li {
     color: orange;
 }
 
-section.question-area {
+/* section.question-area {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -417,9 +417,9 @@ section.question-area .answered-questions {
 
 section.question-area .answered-questions div {
     width: 35px;
-    height: 35px;
+    height: 35px; */
     /* background-color: lime; */
-    border: 1px solid #777;
+/*     border: 1px solid #777;
     margin-top: .5em;
     text-align: center;
     color: #fff;
@@ -427,7 +427,7 @@ section.question-area .answered-questions div {
     font-size: 1.1em;
     padding-top: 0.3em;
     font-family: Monteserrat;
-}
+} */
 
 .course-code {
     font-family: Afacad;
