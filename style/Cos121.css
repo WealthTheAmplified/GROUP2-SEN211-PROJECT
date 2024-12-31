@@ -317,18 +317,17 @@ section.content ol ul li {
     margin-top: 1em;
     list-style-type: lower-roman;
 }
-
-.pagination {
+*/
+.pagination a {
     display: flex;
     justify-content: space-between;
     margin-top: 3em;
 }
- */
+ 
 .pagination .prev {
     width: 30%;
     text-align: right;
     padding: .2em .5em;
-    border: 1px solid #fff;
     background: none;
     color: #fff;
     border-radius: 5px;
@@ -341,6 +340,22 @@ section.content ol ul li {
     width: 30%;
     text-align: left;
     padding: .2em .5em;
+    background: none;
+    color: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagination button{
+    color: none;
+    border: none;
+}
+
+.pagination a {
+    width: 100%;
+    text-align: left;
+    padding: .2em .5em;
     border: 1px solid orange;
     background: none;
     color: orange;
@@ -348,7 +363,11 @@ section.content ol ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-decoration: none;
 }
+
+
+
 
 @media only screen and (min-width: 992px) {
     section.content {
@@ -450,7 +469,9 @@ section.question-area .answered-questions div {
     /* padding-bottom: 50px; */
 }
 
-.go-back {
+.go-back a {
+    text-decoration: none;
+    color: #fff;
     padding: .3em .5em;
     border: 1px solid #fff;
     background: none;
@@ -467,11 +488,6 @@ section.question-area .answered-questions div {
     margin-top: 1em;
 }
 
-.go-back a {
-    text-decoration: none;
-    color: #fff;
-}
-
 .go-back a:hover {
     /* padding: .5em .8em; */
     background-color: orange;
@@ -479,15 +495,6 @@ section.question-area .answered-questions div {
     font-weight: bold;
     cursor: pointer;
 }
-
-.go-back:hover {
-   /*  padding: .5em .8em; */
-   background-color: orange;
-   color: black;
-   font-weight: bold;
-   cursor: pointer;
-}
-
 
 /* .go-back-container {
 display: flex;
