@@ -7,27 +7,41 @@
     <title>Module 2</title>
     <link rel="stylesheet" href="../Frontend/Cos121.css">
 </head>
-
 <body>
     <!-- The header is meant to cover the nav bar too, including the logo -->
-    <header>
+    <header class="desktop-nav">
         <h1><span class="Learn">Learn</span>ify</h1>
         <nav>
-            <ul>
+            <ul class="nav-links">
               <li><p>Home</p></li>
-                <li><p>Topics</p></li>
-                <li><p>Module Quiz</p></li>
-                <li><p>About/Feedback</p></li>
+              <li><p>Topic</p></li>
+              <li><p>More</p></li>
+              <li><p>Module Quiz</p></li>
             </ul>
         </nav>
         <div class="profile">RA</div>
 
-        <div class="hamburger">
+        <div class="hamburger" showOnMobile" onclick="showNav()">
             <div></div>
             <div></div>
             <div></div>
         </div>
+
+        <div class="reverse-hamburger" onclick="hideNav()">
+            <div></div>
+            <div></div>
+        </div>
     </header>
+
+    <!-- <div class="mobile-nav">
+        <nav>
+            <ul>
+                <li onclick="location.href='./../../index.html'">Home <span>></span></li>
+                <li onclick="location.href='./quizzes/quiz.quiz.html'">Module Quiz <span>></span></li>
+            </ul>
+        </nav>
+    </div>
+ -->
 
     <div class="module-btn">
         <h1><span class="Learn">Module</span>2</h1>
