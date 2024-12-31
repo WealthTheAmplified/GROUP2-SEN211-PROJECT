@@ -318,6 +318,12 @@ section.content ol ul li {
     list-style-type: lower-roman;
 }
 */
+
+.pagination{
+    display: flex;
+    justify-content: space-between;
+}
+
 .pagination a {
     display: flex;
     justify-content: space-between;
@@ -352,13 +358,27 @@ section.content ol ul li {
     border: none;
 }
 
-.pagination a {
+.next a {
     width: 100%;
     text-align: left;
     padding: .2em .5em;
     border: 1px solid orange;
     background: none;
     color: orange;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+.prev a {
+    width: 100%;
+    text-align: left;
+    padding: .2em .5em;
+    border: 1px solid #fff;
+    background: none;
+    color: #fff;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
