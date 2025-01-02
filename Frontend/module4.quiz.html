@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../styles/style.css">
-    <link rel="stylesheet" href="../styles/module4.quiz.style.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/module4.quiz.style.css">
+    <link rel="stylesheet" href="../style/Cos121.css">
     
     <script src="./../../../scripts/firebase.js" type="module"></script>
     <script type="module">
@@ -169,16 +170,40 @@
 </head>
 
 <body>
+    <header class="desktop-nav">
+        <h1><span class="Learn">Learn</span>ify</h1>
+        <nav>
+            <ul class="nav-links">
+              <li><p>Home</p></li>
+              <li><p>Topic</p></li>
+              <li><p>More</p></li>
+              <li><p>Module Quiz</p></li>
+            </ul>
+        </nav>
+        <div class="profile">RA</div>
+
+        <div class="hamburger" showOnMobile" onclick="showNav()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="reverse-hamburger" onclick="hideNav()">
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <div class="module-btn">
+        <h1><span class="Learn">Module</span>2</h1>
+    </div>
+
     <div class="timer-head hide">Time left: ...</div>
     <div class="main">
-        <div class="header-section">
-            <img src="../../res/module4.png" class="g4-logo" />
-            <div class="user-slug">
-                EM
-            </div>
+        
         </div>
-        <p class="welcome-message">Welcome, Gideon Jones </p>
-        <p><a href="../../../index.html" class="goto">Home</a> /<a href="../index.html" class="goto">Module 4</a>/Quiz
+        <p class="welcome-message">Welcome, Reverence Anietie </p>
+        <p><a href="../Frontend/cos121.html" class="goto">Module 2</a>
         </p>
         <span class="status-message">Loading quiz...</span>
         <div class="inside embed wait">

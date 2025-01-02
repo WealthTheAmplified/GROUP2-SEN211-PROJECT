@@ -4,28 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
-    <link rel="stylesheet" href="Demo.css">
+    <link rel="stylesheet" href="../styles/demo.css">
 </head>
 <body>
-    <header>
-        <h1><span id="Learn">Learn</span>ify</h1>
+    <header class="desktop-nav">
+        <h1><span id="Learn">Module</span> 1</h1>
         <nav>
             <ul>
-                <li><p>Home</p></li>
-                <li><p>Topics</p></li>
-                <li><p>Module Quiz</p></li>
-                <li><p>About/Feedback</p></li>
+              <li>Home</li>
+                <li>Topics</li>
+                <li>Module Quiz</li>
+                <li>About/Feedback</li>
             </ul>
         </nav>
-        <div class="hamburger">
+
+        <div class="hamburger showOnMobile" onclick="showNav()">
             <div></div>
             <div></div>
             <div></div>
         </div>
+
+        <div class="reverse-hamburger" onclick="hideNav()">
+            <div></div>
+            <div></div>
+            <!-- <div></div> -->
+        </div>
     </header>
 
+    <div class="mobile-nav">
+        <nav>
+            <ul>
+              <li>Home <span>></span></li>
+                <li>Topics <span>></span></li>
+                <li>Module Quiz <span>></span></li>
+                <li>About/Feedback <span>></span></li>
+            </ul>
+        </nav>
+
+    </div>
+
 <div class="GoBack">
-<a href="Details.html"><button class="goBackButton"> Go back</button></a>
+<a href="../lessons/details.html"><button class="goBackButton">< Go back</button></a>
 <div class="time">
 <p>Time: <span>00:10:20</span></p>
 </div>
@@ -83,11 +102,11 @@
 
 </section>
 
-<div class="pagination">
-    <button class="prev"><span></span> Prev Question</button>
+<div class="pagination2">
+    <button class="prev"><span><</span> Prev Question</button>
     <button class="next">Next Question <span>></span></button>
     </div>
     
-
+<script src="../scripts/App.js"></script>
 </body>
 </html>
