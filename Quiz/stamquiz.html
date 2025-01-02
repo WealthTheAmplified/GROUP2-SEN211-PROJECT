@@ -1,0 +1,52 @@
+  <main class="main">
+    <div class="logo-quiz">
+        <h1><span>Learn</span>ify</h1>
+        <h2>Quiz Page</h2>
+    </div>
+    <div class="exit"><a href=""> <- Exit </a></div><h2 align="center">COS 121</h2>
+    <br><br><br><br><br>
+    <div class="quiz-container" id="quiz">
+        <span id="question-number" hidden>3</span>
+        <h2 class="quiz-question" id="question"> What is the primary goal of algorithm design in programming?</h2><br><hr>
+        
+        <section class="option-section">
+            <div class="options">
+                <input type="radio" name="option" value="a" id="first" required >
+                <label for="first" class="answer-label">To write efficient codes</label>
+            </div>
+            <div class="options">
+                <input type="radio" name="option" id="second" value="b" required >
+                <label for="second" class="answer-label">To solve complex problem</label>
+            </div>
+            <div class="options">
+                <input type="radio" id="third" name="option" value="c" required >
+                <label for="third" class="answer-label">To design a user interface</label>
+            </div>
+            <div class="options">
+               <input type="radio" id="fourth" name="option" value="d" required >
+               <label for="fourth" class="answer-label">To optimize memory usage</label>
+            </div>
+            <br><br><br><br>
+            <hr><br>
+
+            <div class="pn-btn" id="prev-btn">
+                <button class="left-btn" > <- Prev</button>
+                <div class="quiz-count">( <span id="page-count">1</span>/<strong id="strong-total">20</strong>)</div>
+                <button type="button" class="right-btn but-btn" id="next-btn">Next -></button> 
+            </div>
+            <div class="submit-div"> <button type="button" class="but-btn submit" id="submit">Submit</button></div>
+            
+        </section>
+    </div>
+  </main><br><br><br>
+  
+  
+  <div>
+      
+      <div class="result-div" id="result">
+          <h2 class="h2" id="score">Questions Answered</h2>
+          <div class="reload-quiz">
+              <button type="button" onclick="location.reload();">Reload Quiz</button>
+          </div>
+     </div>
+  </div>
