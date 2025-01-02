@@ -2,7 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Monteserrat;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
 }
 
 body {
@@ -36,6 +37,12 @@ body {
 header h1 {
     font-family: Monteserrat-Black;
     font-size: 20px;
+    position: fixed;
+}
+
+.cos121 {
+    font-size: 15px;
+    font-weight: normal;
 }
 
 .module-btn span{
@@ -92,6 +99,8 @@ header .hamburger {
     display: none;
     cursor: pointer;
 }
+
+
 
 .HomeContent1 {
     /* border: 1px solid wheat; */
@@ -622,6 +631,7 @@ header {
     align-items: center;
     justify-content: center;
     font-weight: bold;
+    float: right;
 }
 
 .Sub-header{
@@ -633,3 +643,23 @@ header {
     justify-content: space-between;
    /*  padding-left: 30px; */
 }
+
+.lecture-content{
+    font-size: large; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-display: block;
+    text-align: justify;
+    padding: 10px;
+}
+/*
+ .lecture-module-intro{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*/
+.inner-heading{
+    font-size: 18px;
+    font-weight: bolder;
+    padding-top: 10px;
+    padding-bottom: 5px;
+} 

@@ -16,7 +16,7 @@
             <ul>
               <li><p>Home</p></li>
                 <li><p>Topics</p></li>
-                <li><p>Module Quiz</p></li>
+                <li><p><a href="../Quiz/Quiz.html">Module Quiz</a></p></li>
                 <li><p>About/Feedback</p></li>
             </ul>
         </nav>
@@ -34,7 +34,7 @@
     </div>
     <div class="Sub-header">
         <div class="go-back"><a href="../Frontend/cos121.html">&lt; Go back</a></div>
-        <button class="quizButton">Module Quiz</button>
+        <button class="quizButton"><a href="../Quiz/Quiz.html">Module Quiz</a></button>
     </div>
 
     <!-- <div class="HomeContent1">
@@ -54,9 +54,9 @@
         <main class="lecture-content">
 
             <div class="lecture-heading">
-                <h1>COS121</h1>
+                <h1><span class="cos121">(COS121)</span></h1>
                 <h1>Introduction To Array</h1>
-            </div>
+            </div><br>
 
                 <div class="lecture-note">
                     <div class="lecture-module-intro">
@@ -65,11 +65,11 @@
 
                     <div>
                             <div class="inner-heading">
-                                <h2>Characteristics of Arrays:</h2>
+                                <h3>Characteristics of Arrays</h3>
                             </div>
 
                                 <div class="type-list">
-                                    <ul> 
+                                    <ol> 
                                         <li>All elements in an array are of the same data type.</li> 
 
                                         <li>Each element in an array is identified by an index or subscript.</li>
@@ -77,11 +77,11 @@
                                         <li>Arrays are stored in contiguous memory locations.</li> 
 
                                         <li>Arrays have a fixed size that is specified when the array is created.</li>
-                                    </ul>
+                                    </ol>
                                 </div><br>
 
                             <div class="inner-heading">
-                                 <h2>Types of Arrays:</h2>
+                                 <h3>Types of Arrays</h3>
                             </div>
                                 <div class="type-list">
                                     <ol>
@@ -89,50 +89,49 @@
 
                                         <li>Multi-dimensional array: A table or matrix of elements of the same data type.</li>
                                     </ol>
-                                </div>
+                                </div><br>
 
                                 <div class="inner-heading">
-                                    <h2>Declaring Arrays</h2>
+                                    <h3>Declaring Arrays</h3>
                                 </div>
     
                                     <div class="type-list">
-                                        <ul> 
+                                        <ol> 
                                             <li>The syntax for declaring a one-dimensional array is: data_type array_name[array_size];</li> 
     
                                             <li>The syntax for declaring a multi-dimensional array is: data_type
                                                 array_name[array_size1][array_size2];.</li>
-                                        </ul>
+                                        </ol>
                                     </div><br>
 
                                 <div class="inner-heading">
-                                    <h2>Initializing Arrays</h2>
+                                    <h3>Initializing Arrays</h3>
                                 </div>
     
                                     <div class="type-list">
-                                        <ul> 
+                                        <ol> 
                                             <li>Arrays can be initialized when they are declared using the syntax: data_type array_name[array_size] = {element1, element2, ...};</li> 
     
                                             <li>Arrays can also be initialized using a loop.</li>
-                                        </ul>
+                                        </ol>
                                     </div><br>
 
                                 <div class="inner-heading">
-                                    <h2>Initializing Arrays</h2>
+                                    <h3>Initializing Arrays</h3>
                                 </div>
         
                                    <div class="type-list">
-                                        <ul> 
+                                        <ol> 
                                             <li>Array elements can be accessed using their index or subscript.</li> 
     
                                             <li>The syntax for accessing an array element is: array_name[index].</li>
-                                        </ul>
+                                        </ol>
                                     </div><br>
 
-                                <div class="inner-heading">
-                                    <h3>Exaples:</h3>
-                                </div>
-            
-                                    <div class="example">
+                                <div>
+                        
+                                        <h3 class="inner-heading">Exaples:</h3>
+
                                         <p>Example of a One-Dimensional Array:</p>
                                         <p>int scores[5] = {90, 80, 70, 60, 50};</p>
                                         <p>printf(&quot;%d&quot;, scores[0]); // prints 90</p><br>
@@ -155,6 +154,9 @@
                                         <p>}</p>    
                                         
                                     </div><br>
+                                    </fieldset>
+                                    
+                                
                     </div>
 
                 </div>

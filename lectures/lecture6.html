@@ -16,7 +16,7 @@
             <ul>
               <li><p>Home</p></li>
                 <li><p>Topics</p></li>
-                <li><p>Module Quiz</p></li>
+                <li><p><a href="../Quiz/Quiz.html">Module Quiz</a></p></li>
                 <li><p>About/Feedback</p></li>
             </ul>
         </nav>
@@ -34,7 +34,7 @@
     </div>
     <div class="Sub-header">
         <div class="go-back"><a href="../Frontend/cos121.html">&lt; Go back</a></div>
-        <button class="quizButton">Module Quiz</button>
+        <button class="quizButton"><a href="../Quiz/Quiz.html">Module Quiz</a></button>
     </div>
 
     <!-- <div class="HomeContent1">
@@ -54,7 +54,7 @@
         <main class="lecture-content">
 
             <div class="lecture-heading">
-                <h1>COS121</h1>
+                <h1><span class="cos121">(COS121)</span></h1>
                 <h1>Computer Programming Langu</h1>
             </div>
 
@@ -65,7 +65,7 @@
 
                     <div>
                             <div class="inner-heading">
-                                <h2>Types of Programming Languages</h2>
+                                <h3>Types of Programming Languages</h3>
                             </div>
 
                                 <div class="type-list">
@@ -81,7 +81,7 @@
                                 </div><br>
 
                             <div class="inner-heading">
-                                <h2>Characteristics of Programming Language</h2>
+                                <h3>Characteristics of Programming Language</h3>
                             </div> 
 
                                 <div class="type-list">
@@ -97,7 +97,7 @@
                                 </div>
 
                                 <div class="inner-heading">
-                                    <h2>Popular Programming Languages</h2>
+                                    <h3>Popular Programming Languages</h3>
                                 </div> 
     
                                     <div>
@@ -117,52 +117,52 @@
                                     </div>  
                                     
                                 <div class="inner-heading">
-                                    <h4>Exaples:</h4>
+                                    <h3>Exaples:</h3>
                                 </div>
                                     <div class="example">
-                                        <p>Example of a Python program:</p>
-                                        <p>def factorial(n):
-                                            # Base case: if n is 0 or 1, return 1
-                                            if n == 0 or n == 1:
-                                                return 1
-                                            # Recursive case: n * factorial of (n-1)
-                                            else:
-                                                return n * factorial(n - 1)
+                                        <pre>Example of a Python program:<br>
+                                            def factorial(n):<br>
+                                            # Base case: if n is 0 or 1, return 1<br>
+                                            if n == 0 or n == 1:<br>
+                                                return 1<br>
+                                            # Recursive case: n * factorial of (n-1)<br>
+                                            else:<br>
+                                                return n * factorial(n - 1)<br>
                                             
-                                            # Input: change the value of 'num' to calculate the factorial of a different number
-                                            num = 5
-                                            result = factorial(num)
-                                            print(f"The factorial of {num} is {result}")</p><br>
+                                            # Input: change the value of 'num' to calculate the factorial of a different number<br>
+                                            num = 5<br>
+                                            result = factorial(num)<br>
+                                            print(f"The factorial of {num} is {result}")</pre><br><br>
 
-                                            <p>Example of a PHP program:</p>
-                                            <p><?php
-                                                $servername = "localhost";
-                                                $username = "username";
-                                                $password = "password";
-                                                $dbname = "database_name";
+                                            <pre>Example of a PHP program:<br>
+                                                ?php
+                                                $servername = "localhost";<br>
+                                                $username = "username";<br>
+                                                $password = "password";<br>
+                                                $dbname = "database_name";<br>
                                                 
-                                                // Create connection
-                                                $conn = new mysqli($servername, $username, $password, $dbname);
+                                                // Create connection<br>
+                                                $conn = new mysqli($servername, $username, $password, $dbname);<br>
                                                 
-                                                // Check connection
-                                                if ($conn->connect_error) {
-                                                    die("Connection failed: " . $conn->connect_error);
-                                                }
+                                                // Check connection<br>
+                                                if ($conn->connect_error) {<br>
+                                                    die("Connection failed: " . $conn->connect_error);<br>
+                                                }<br>
                                                 
-                                                $sql = "SELECT id, name, email FROM users";
-                                                $result = $conn->query($sql);
+                                                $sql = "SELECT id, name, email FROM users";<br>
+                                                $result = $conn->query($sql);<br>
                                                 
-                                                if ($result->num_rows > 0) {
-                                                    // Output data of each row
-                                                    while($row = $result->fetch_assoc()) {
+                                                if ($result->num_rows > 0) {<br>
+                                                    // Output data of each row<br>
+                                                    while($row = $result->fetch_assoc()) {<br>
                                                         echo "id: " . $row["id"]. " - Name: " . $row["name"]. " - Email: " . $row["email"]. "<br>";
-                                                    }
-                                                } else {
-                                                    echo "0 results";
-                                                }
-                                                $conn->close();
+                                                    }<br>
+                                                } else {<br>
+                                                    echo "0 results";<br>
+                                                }<br>
+                                                $conn->close();<br>
                                                 ?>
-                                                </p>
+                                                </pre>
                                        </div>
                     </div>
 
