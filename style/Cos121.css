@@ -52,7 +52,15 @@ header h1 {
     font-weight: bold;
 }
 
+.nav-links a {
+    color: white;   
+    text-decoration:none;
+}
 
+.nav-links a:hover{
+    color: orange;
+    transition: .5s;
+}
 
 nav ul {
     display: flex;
@@ -65,7 +73,7 @@ nav ul li {
     list-style-type: none;
 }
 
-nav ul li p {
+nav ul li p a {
     font-size: 1em;
     transition: 0.3s;
     cursor: pointer;
@@ -724,4 +732,11 @@ header {
     background-color: orange;
     color: black;
     width: 4em;
+}
+
+.about-heading{
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
