@@ -686,7 +686,7 @@ header {
 .DropDown-Button{
     background-color:transparent;
     color: white;
-    font-size: 16px;
+    font-size: 17px;
     border: none;
     cursor: pointer;
 }
@@ -699,19 +699,20 @@ header {
 .Drop-Menu{
     display: none;
     position: absolute;
-    background-color: lightblue;
+    background-color: rgb(211, 208, 208);
     min-width: 102px;
 } 
 
 .Drop-Menu a {
-    color: black;
+    color: orange;
     padding: 11px 15px;
     text-decoration: none;
     display: block;
 }
 
 .Drop-Menu a:hover{
-    background-color: orange;
+    background-color: rgb(240, 189, 93);
+    color: black;
 }
 
 .hidden:hover .Drop-Menu{
@@ -721,4 +722,6 @@ header {
 
 .hidden:hover .DropDown-Button{
     background-color: orange;
+    color: black;
+    width: 4em;
 }
