@@ -111,15 +111,15 @@ header .hamburger {
 }
 
 .Lectures-Overview {
-    margin: 2rem 0 2rem 0;
+    margin: 6rem 0 2rem 0;
     /* border: 1px solid white; */
-    padding-top: 30px
+    padding-top: 40px
 }
 
 .lectures-overview-header {
     /* border: 1px solid white; */
     display: flex;
-    height: 5rem;
+    height: 5.5rem;
     margin: 0 0 1rem 0;
     align-items: center;
     justify-content: space-between;
@@ -267,18 +267,6 @@ height: 7rem;
     }
 }
 
-.GoBack {
-    display: flex;
-    justify-content: space-between;
-}
-
-.GoBack .goBackButton {
-    background: none;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
 .quizButton {
     padding: .3em .5em;
     background: none;
@@ -317,7 +305,7 @@ height: 7rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1em;
+    margin-top: 0em;
     float: right;
     text-decoration: none;
 } 
@@ -435,10 +423,6 @@ section.content ol ul li {
     }
 }
 
-.GoBack .time span {
-    color: orange;
-}
-
 .content{
     display: block;
     justify-content: center;
@@ -545,7 +529,7 @@ section.question-area .answered-questions div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1em;
+    margin-top: .7em;
 }
 
 .go-back a:hover {
@@ -654,8 +638,8 @@ header {
   }
  */
 .profile {
-    width: 35px;
-    height: 35px;
+    width: 31px;
+    height: 31px;
     background-color: #dd3b3b;
     border-radius: 50%;
     display: flex;
@@ -663,6 +647,7 @@ header {
     justify-content: center;
     font-weight: bold;
     float: right;
+    cursor: pointer;
 
 }
 
@@ -695,3 +680,45 @@ header {
     padding-top: 10px;
     padding-bottom: 5px;
 } 
+
+
+
+.DropDown-Button{
+    background-color:transparent;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.hidden{
+    position: relative;
+    display: inline-block;
+}
+
+.Drop-Menu{
+    display: none;
+    position: absolute;
+    background-color: lightblue;
+    min-width: 102px;
+} 
+
+.Drop-Menu a {
+    color: black;
+    padding: 11px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.Drop-Menu a:hover{
+    background-color: orange;
+}
+
+.hidden:hover .Drop-Menu{
+    display: Block;
+
+}
+
+.hidden:hover .DropDown-Button{
+    background-color: orange;
+}
