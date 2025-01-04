@@ -37,7 +37,6 @@ body {
 header h1 {
     font-family: Monteserrat-Black;
     font-size: 20px;
-    position: fixed;
 }
 
 .cos121 {
@@ -143,7 +142,17 @@ header .hamburger {
     border: 4px solid orange;
     border-radius: 30px;
     transition: .3s;
-}
+   }
+
+   .module-quiz a{
+    text-decoration: none;
+    color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    float: right;
+   }
 
 .templates {
     display: grid;
@@ -272,6 +281,30 @@ height: 7rem;
 
 .quizButton {
     padding: .3em .5em;
+    background: none;
+    transition: .3s;
+    width: 150px;
+    font-family: Open Sans;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+    float: right;
+}
+
+.quizButton :hover {
+    /* padding: .5em .8em; */
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+ .quizButton a {
+    padding: .3em .5em;
     border: 1px solid orange;
     background: none;
     color: orange;
@@ -286,14 +319,12 @@ height: 7rem;
     align-items: center;
     margin-top: 1em;
     float: right;
-}
+    text-decoration: none;
+} 
 
-.quizButton:hover {
-    /* padding: .5em .8em; */
-    background-color: orange;
-    color: black;
-    font-weight: bold;
-    cursor: pointer;
+.quizButton{
+    background-color: none;
+    border: none;
 }
 
 /* section.content {
@@ -632,6 +663,7 @@ header {
     justify-content: center;
     font-weight: bold;
     float: right;
+
 }
 
 .Sub-header{

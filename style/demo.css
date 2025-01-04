@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Monteserrat !important;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -406,8 +406,14 @@ section.content ul li {
     }
 }
 
-.GoBack .time span {
+.time span {
     color: orange;
+}
+
+.time {
+    display: flex;
+    justify-content: space-around;
+
 }
 
 section.question-area {
